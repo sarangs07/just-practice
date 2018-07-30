@@ -1,0 +1,21 @@
+.countdown_box
+{
+    /*border: 1px #000 solid;*/
+    padding:  10px;
+    overflow: hidden;
+}
+
+.countdown_box span
+{
+	padding: 12px 16px;
+    /*border: 1px #000 solid;
+    border-radius: 50px;*/
+    float: left;
+}
+
+.countdown_box h4
+{
+	float: left;
+	clear: none;
+	padding: inherit;
+}
