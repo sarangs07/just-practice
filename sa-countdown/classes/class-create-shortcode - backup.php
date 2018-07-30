@@ -31,17 +31,32 @@
  			public function createcdShortcode(){
  				//echo "in createcdShortcode function <br />";
  				ob_start(); 
- 				
+ 				$today_date = date("d-m-Y");
+ 				$till_date  = "13-08-2018";
 
-			    $data = '<div class="countdown_box">'; 
-			    $data .= '<h3>';
-			    $data .= get_option( 'myplugin_option_name', 'Title Not found' );
-			    $data .= '</h3>';
-			    $data .= '<div id="show_sa_countdown"></div>'; 
-			    $data .= '</div>';
-		    	return $data;
+ 				if(strtotime($till_date) != strtotime($today_date))
+ 				{
+ 					$Draw_time = str_replace('/', '-', "13/08/2018 12am");
+
+					$now = new DateTime();
+
+					$futureDate = new DateTime($Draw_time);
+					
+						$interval = $futureDate->diff($now);
+						$countdown = $interval->format("<span>%a</span> <h4>days</h4> <span>%h</span> <h4>hours</h4> <span>%i</span> <h4>minutes</h4> <span>%s</span> <h4>secs</h4>");
+
+					    $data = '<div class="countdown_box">'; 
+					    $data .= '<h3>';
+					    $data .= get_option( 'myplugin_option_name', 'Title Not found' );
+					    $data .= '</h3>';
+					    $data .= $countdown; 
+					    $data .= '</div>';
+				    	return $data;
 				    
-				
+				}
+				else{
+
+				}
  			}
 	 	}
 

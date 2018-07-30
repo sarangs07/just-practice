@@ -55,7 +55,7 @@
 					
 
 				<?php
-					
+					screen_icon();
 				echo '<form method="post" action="options.php">';
 						settings_fields( "myplugin_options_group" );
 				echo '<div class="row">
@@ -80,7 +80,7 @@
 
 										<div class="form-group">
 											<label>Enter title</label>
-											<input type="text" placeholder="Enter Title" name="cd_title" id="cd_title" class="form-control" required="required" value="'.get_option("myplugin_option_name").'">
+											<input type="text" placeholder="Enter Title" name="myplugin_option_name" id="myplugin_option_name" class="form-control" required="required" value="'.get_option("myplugin_option_name").'">
 										</div>
 
 										<div class="form-group">

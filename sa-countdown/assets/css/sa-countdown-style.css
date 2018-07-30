@@ -13,9 +13,9 @@
     float: left;
 }
 
-.countdown_box h4
+.countdown_box #show_sa_countdown h4
 {
 	float: left;
 	clear: none;
-	padding: inherit;
+	padding: 12px 0;
 }

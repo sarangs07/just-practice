@@ -29,8 +29,12 @@
 
  			public function addCss(){
  				//echo "In Add Function - It is working";
+ 				//loading css
  				add_action( 'admin_init', array( $this, 'enque_css_files' ) );
  				add_action( 'init', array( $this, 'enque_front_end_style' ) );
+
+ 			//loading js
+ 				add_action( 'init', array( $this, 'addCountdownScript' ) );
  				
  			}
 
@@ -40,6 +44,11 @@
 
  				wp_register_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
 				wp_enqueue_style( 'bootstrap-css' );
+ 			}
+
+ 			public function addCountdownScript(){
+ 				wp_register_script('sa-countdown-script', plugins_url().'/sa-countdown/assets/js/sa-countdown-script.js');
+ 				wp_enqueue_script('sa-countdown-script');
  			}
 
  			public function enque_front_end_style(){
