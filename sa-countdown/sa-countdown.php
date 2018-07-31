@@ -15,4 +15,3 @@
 	defined( 'ABSPATH' ) or exit();
 
 	require_once'classes/class-countdown-loader.php';
-?>
