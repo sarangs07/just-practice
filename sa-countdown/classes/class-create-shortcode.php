@@ -46,7 +46,8 @@
 								    document.getElementById("show_sa_countdown").innerHTML = "<span>" + days + "</span><h4>Days &nbsp;&nbsp;</h4>" + "<span>" + hours + "</span> <h4>Hours &nbsp;&nbsp;</h4>"
 								    + "<span>" + minutes + "</span> <h4>Minutes &nbsp;&nbsp;</h4>" + "<span>" + seconds + "</span> <h4>Seconds &nbsp;&nbsp;</h4>";
 								    
-								    // If the count down is over, write some text 
+								    // If the count down is over, write some text
+
 								    if (distance < 0) {
 								        clearInterval(x);
 								        document.getElementById("show_sa_countdown").innerHTML = "EXPIRED";

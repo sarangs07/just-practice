@@ -89,7 +89,7 @@
 
 											<div class="form-group">
 												<label>Select Date</label>
-												<input type="date" placeholder="Select the date" name="sa_countdown_date" id="sa_countdown_date" class="form-control" required="required" value="'.get_option("sa_countdown_date").'">
+												<input type="datetime-local" placeholder="Select the date" name="sa_countdown_date" id="sa_countdown_date" class="form-control" required="required" value="'.get_option("sa_countdown_date").'">
 											</div>
 
 											<div class="col-md-12">';
