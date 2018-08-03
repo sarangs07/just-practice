@@ -1,5 +1,5 @@
 <?php
-	/*
+    /*
 	*	Plugin Name:  SA Countdown
 	*	Plugin URI:   https://www.google.com/
 	*	Description:  To add the countdown plugin on the pages. Add this <strong>Shortcode: 
@@ -12,6 +12,6 @@
 	*	@package sa-countdown
 	*	@author Sarang
 	*/
-	defined( 'ABSPATH' ) or exit();
+    defined('ABSPATH') or exit();
 
-	require_once'classes/class-countdown-loader.php';
+    require_once'classes/class-countdown-loader.php';
